@@ -1,33 +1,32 @@
 {
   "compilerOptions": {
-    /* Base Options: */
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "target": "es2022",
+    "target": "ESNext",
     "allowJs": true,
     "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
 
-    /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
 
-    /* If transpiling with TypeScript: */
     "module": "NodeNext",
     "outDir": "dist",
     "rootDir": "src",
     "sourceMap": true,
 
-    /* Building for a library: */
     "declaration": true,
 
-    /* Building for a library in a monorepo: */
     "declarationMap": true,
 
-    /* Building for a library that uses JSX: */
-    "lib": ["es2022"]
-  }
+    "lib": ["ESNext", "DOM"],
+
+    "jsx": "react-jsx",
+
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src"]
 }
